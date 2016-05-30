@@ -1,17 +1,31 @@
-var app = angular.module('blueberries', ['ngRoute']);
+var app = angular.module('blueberries', ['ngRoute', 'ui.bootstrap']);
 
 app.config(function($routeProvider) {
   $routeProvider
 
     .when('/', {
-      templateUrl : 'pages/home.tpl.html',
+      templateUrl : 'pages/home.tpl.html'
     })
 
     .when('/blueberries', {
-      templateUrl : 'pages/blueberries.tpl.html',
+      controller: 'ReadingController',
+      templateUrl : 'pages/blueberries.tpl.html'
     })
 
     .when('/panel', {
-      templateUrl : 'pages/panel.tpl.html',
+      templateUrl : 'pages/panel.tpl.html'
     })
 });
+
+app.controller('ReadingController', ['$scope', '$uibModal', function($scope, $uibModal) {
+  $scope.openModal = function() {
+    $uibModal.open({
+      templateUrl: 'pages/error.tpl.html',
+      controller: ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
+        $scope.cancel = function() {
+          $uibModalInstance.dismiss();
+        };
+      }]
+    });
+  };
+}]);
