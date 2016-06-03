@@ -27,10 +27,22 @@
   <div class="row">
     <div class="col-md-12 text-center">
 
-      <div class="micro">
-        <a ng-click="openModal()">
-          <i class="fa fa-microphone"></i>
+      <div class="micro" ng-show="status=='micro'">
+          <i class="fa fa-microphone" ng-click="status='pause'"></i>
+      </div>
+
+      <div class="pause-button-green" ng-show="status=='pause'">
+        <a ng-click="openModal(); status='hold'">
+          <i class="fa fa-pause"></i>
         </a>
+      </div>
+
+      <div class="pause-button-grey" ng-show="status=='hold'">
+          <i class="fa fa-pause"  ng-click="status='micro'"></i>
+      </div>
+
+      <div class="recording" ng-show="status=='pause'">
+          Recording...
       </div>
 
     </div>
