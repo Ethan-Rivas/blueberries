@@ -18,6 +18,8 @@ app.config(function($routeProvider) {
 });
 
 app.controller('ReadingController', ['$scope', '$uibModal', function($scope, $uibModal) {
+  $scope.status = 'micro';
+
   $scope.openModal = function() {
     $uibModal.open({
       templateUrl: 'pages/error.tpl.html',
