@@ -1,4 +1,4 @@
-ar recLength = 0,
+var recLength = 0,
   recBuffersL = [],
   recBuffersR = [],
   sampleRate;

@@ -74,7 +74,6 @@
 }
 
 .options-area {
-  margin-top: 20px;
   width: 160px;
   height: 55px;
   border-right: 2px solid #5ABB62;
@@ -110,7 +109,7 @@
 }
 
 .berries-content {
-  margin: 0 15px 20px 15px;
+  margin: 0 15px 0px 15px;
 }
 
 .berries-content h2 {
@@ -310,15 +309,16 @@ td.student-info {
 
 canvas { 
 	display: inline-block; 
-	background: #202020; 
-	width: 555px;
-	height: 80px;
+	background: white; 
+	width: 111px;
+	height: 35px;
 	border-radius: 6px;
 }
 
 #viz {
 	display: inline-block;
   float: right;
+  margin-top: -5px;
 }
 
 .pause-button-green {
@@ -376,10 +376,14 @@ canvas {
 }
 
 .recording {
-  padding-top: 4px;
+  padding: 12px;
   border: 2px solid #BFC1C2;
-  width: 150px;
-  height: 30px;
+  width: 250px;
+  height: 53px;
   border-radius: 5px;
   color: #BFC1C2;
+  float: right;
+  position: absolute;
+  right: 12px;
+  bottom: -52px;
 }
