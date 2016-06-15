@@ -74,7 +74,6 @@
 }
 
 .options-area {
-  margin-top: 20px;
   width: 160px;
   height: 55px;
   border-right: 2px solid #5ABB62;
@@ -110,7 +109,7 @@
 }
 
 .berries-content {
-  margin: 0 15px 20px 15px;
+  margin: 0 15px 0px 15px;
 }
 
 .berries-content h2 {
@@ -308,16 +307,83 @@ td.student-info {
   margin-top: 20px;
 }
 
-
 canvas { 
 	display: inline-block; 
-	background: #202020; 
-	width: 555px;
-	height: 80px;
+	background: white; 
+	width: 111px;
+	height: 35px;
 	border-radius: 6px;
 }
 
 #viz {
 	display: inline-block;
   float: right;
+  margin-top: -5px;
+}
+
+.pause-button-green {
+  margin-top: 15px;
+  display: block;
+  padding-top: 3px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #5ABB62;
+  border-radius: 100%;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  -moz-box-shadow: 0 0 10px #5ABB62;
+  -webkit-box-shadow: 0 0 10px #5ABB62;
+  box-shadow: 0 0 10px #5ABB62;
+}
+
+.pause-button-green i {
+  padding-top: 10px;
+  background-color: #5ABB62;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  color: white;
+  font-size: 30px;
+}
+
+.pause-button-grey {
+  margin-top: 15px;
+  display: block;
+  padding-top: 3px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #BFC1C2;
+  border-radius: 100%;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  -moz-box-shadow: 0 0 10px #BFC1C2;
+  -webkit-box-shadow: 0 0 10px #BFC1C2;
+  box-shadow: 0 0 10px #BFC1C2;
+}
+
+.pause-button-grey i {
+  padding-top: 10px;
+  background-color: #BFC1C2;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  color: white;
+  font-size: 30px;
+}
+
+.recording {
+  padding: 12px;
+  border: 2px solid #BFC1C2;
+  width: 250px;
+  height: 53px;
+  border-radius: 5px;
+  color: #BFC1C2;
+  float: right;
+  position: absolute;
+  right: 12px;
+  bottom: -52px;
 }
