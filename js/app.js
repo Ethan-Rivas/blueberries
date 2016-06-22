@@ -27,11 +27,14 @@ app.controller('ReadingController', ['$scope', '$uibModal', function($scope, $ui
         $scope.cancel = function() {
           $uibModalInstance.dismiss();
         };
+
+        $scope.goPanel = function() {
+          $uibModalInstance.dismiss();
+          window.location.assign('/#/panel');
+        };
       }]
     });
   };
-  
-  console.log('hola');
   
   // Audio Animation
 
@@ -341,7 +344,6 @@ app.controller('ReadingController', ['$scope', '$uibModal', function($scope, $ui
     }
 
     window.Recorder = Recorder;
-    window.hola = 'hola';
 
   })(window);
 }]);
